@@ -1,0 +1,11 @@
+[{
+  "name": "Spotify Premium",
+  "price": 490,
+  "maxMembers": 6
+},
+  {
+    "name": "Youtube Premium",
+    "price": 290,
+    "maxMembers": 1
+  }
+]

@@ -1,0 +1,42 @@
+package dev.infiren.SubscriptionBot.bot.keyboard;
+
+public enum CallbackQuery {
+    SHOW_ADDSUBSMENU,
+    SHOW_ACTIVESUBSMENU,
+    SHOW_MAINMENU,
+    SHOW_PURCHASECONFIRMMENU,
+    SHOW_PURCHASESUCCESSMENU,
+    SHOW_SUBSETTINGSMENU,
+    SHOW_SUBDELETEMENU,
+    SHOW_USECODEMENU,
+    SHOW_REQUESTENTERMENU,
+    SHOW_REGENERATECODEMENU,
+    SHOW_KICKUSERMENU,
+    SHOW_KICKUSERSUCCESSMENU,
+    SHOW_ADMINMAINMENU,
+    SHOW_ADMINSTATISTICSMENU,
+    SHOW_ADMINREQUESTLISTMENU,
+    SHOW_ADMINSUBSMENU,
+    SHOW_ADMINADDSUBMENU,
+    SHOW_ADMINREQUESTMENU,
+    SHOW_ADMINREQUESTDELETEMENU,
+    SHOW_ADMINSUBDETAILSMENU,
+    SHOW_CHANGEACTIVEMENU,
+    SHOW_CHANGESUBCREATORMENU,
+    SHOW_CHANGESUBCREATORSUCCESSMENU,
+    RESET_STATEMENTANDMETADATA("|RESET"),
+    DATA("|DATA:");
+
+    private final String callback;
+
+    CallbackQuery() {
+        this.callback = this.name();
+    }
+    CallbackQuery(String callback) {
+        this.callback = callback;
+    }
+
+    public String getCallback() {
+        return callback;
+    }
+}
